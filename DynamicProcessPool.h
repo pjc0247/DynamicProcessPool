@@ -12,7 +12,7 @@ template <typename T>
 class DynamicProcessPool{
 public:
 	typedef std::function<bool(T)>	handler_t;
-	typedef std::thread				worker_t;
+	typedef std::thread		worker_t;
 
 	DynamicProcessPool(){
 	}
