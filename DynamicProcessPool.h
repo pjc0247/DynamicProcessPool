@@ -25,8 +25,8 @@ public:
 		_lifeTime : 한 개의 worker가 일을 몇 번 수행할지 횟수
 		_handler : workItem을 핸들링할 핸들러
 	*/
-	DynamicProcessPool(	int _initialWorkers,int _maxWorker,
-						int _lifeTime, handler_t _handler) :
+	DynamicProcessPool( int _initialWorkers,int _maxWorker,
+			    int _lifeTime, handler_t _handler) :
 		handler( _handler ),
 		quit( false ),
 		maxWorker( _maxWorker ), lifeTime( _lifeTime ),
