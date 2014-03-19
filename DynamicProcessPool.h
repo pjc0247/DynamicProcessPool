@@ -137,7 +137,6 @@ protected:
 
 				workItem = qWork.front();
 				qWork.pop();
-				guard.unlock();
 			}
 
 			nWorking.fetch_add(1);
