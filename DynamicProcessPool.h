@@ -28,8 +28,8 @@ public:
 	DynamicProcessPool( int _initialWorkers,int _maxWorker,
 			    int _lifeTime, handler_t _handler) :
 		handler( _handler ),
-		quit( false ),
 		maxWorker( _maxWorker ), lifeTime( _lifeTime ),
+		quit( false ),
 		nWorker( 0 ), nWaiting( 0 ), nWorking( 0 ) {
 
 		for(int i=0;i<_initialWorkers;i++)
