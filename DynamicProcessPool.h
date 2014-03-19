@@ -100,10 +100,10 @@ public:
 		// spin wait
 		//   joinable, join 사이에 컨텍스트 스위칭을 막으려고 락을 쓰는 것 대신
 		//   spin wait를 사용한다.
-		int spincount = 10000;
+		int spinCount = 10000;
 		while( nWorker.load() > 0 ){
-			if( spincount )
-				spincount --;
+			if( spinCount )
+				spinCount --;
 			else{
 				std::this_thread::sleep_for(
 					std::chrono::milliseconds(1) );
