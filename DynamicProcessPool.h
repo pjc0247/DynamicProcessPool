@@ -57,7 +57,7 @@ public:
 		// 비어있는 worker가 없고 maxWorker만큼 worker가 없으면
 		// 새 worker를 생성하고 일을 할당.
 		if( maxWorker < nWorker.load() && nWaiting.load() == 0 ){
-			addWorkerWithWork( 10, workItem );
+			addWorkerWithWork( lifeTime, workItem );
 		}
 		else{
 			std::unique_lock<std::mutex> guard( queueMutex );
