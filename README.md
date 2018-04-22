@@ -1,4 +1,4 @@
-DynamicProcessPool
+DynamicThreadPool
 ==================
 
-dynamic ppool
+Dynamic thread pool for C++.
